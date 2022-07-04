@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7z020_1" gui_info="dashboard1=hw_vios[xc7z020_1/hw_vio_1=VIO_PROBES_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z020_1" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/top_module.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="number[31:0]" gui_info="hw_vios/hw_vio_1=0"/>
+    <Object name="res_fraction[15:0]" gui_info="hw_vios/hw_vio_1=1"/>
+    <Object name="res_integer[15:0]" gui_info="hw_vios/hw_vio_1=2"/>
+    <Object name="result[31:0]" gui_info="hw_vios/hw_vio_1=3"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="res_fraction[15]"/>
+        <net name="res_fraction[14]"/>
+        <net name="res_fraction[13]"/>
+        <net name="res_fraction[12]"/>
+        <net name="res_fraction[11]"/>
+        <net name="res_fraction[10]"/>
+        <net name="res_fraction[9]"/>
+        <net name="res_fraction[8]"/>
+        <net name="res_fraction[7]"/>
+        <net name="res_fraction[6]"/>
+        <net name="res_fraction[5]"/>
+        <net name="res_fraction[4]"/>
+        <net name="res_fraction[3]"/>
+        <net name="res_fraction[2]"/>
+        <net name="res_fraction[1]"/>
+        <net name="res_fraction[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="res_integer[15]"/>
+        <net name="res_integer[14]"/>
+        <net name="res_integer[13]"/>
+        <net name="res_integer[12]"/>
+        <net name="res_integer[11]"/>
+        <net name="res_integer[10]"/>
+        <net name="res_integer[9]"/>
+        <net name="res_integer[8]"/>
+        <net name="res_integer[7]"/>
+        <net name="res_integer[6]"/>
+        <net name="res_integer[5]"/>
+        <net name="res_integer[4]"/>
+        <net name="res_integer[3]"/>
+        <net name="res_integer[2]"/>
+        <net name="res_integer[1]"/>
+        <net name="res_integer[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="result[31]"/>
+        <net name="result[30]"/>
+        <net name="result[29]"/>
+        <net name="result[28]"/>
+        <net name="result[27]"/>
+        <net name="result[26]"/>
+        <net name="result[25]"/>
+        <net name="result[24]"/>
+        <net name="result[23]"/>
+        <net name="result[22]"/>
+        <net name="result[21]"/>
+        <net name="result[20]"/>
+        <net name="result[19]"/>
+        <net name="result[18]"/>
+        <net name="result[17]"/>
+        <net name="result[16]"/>
+        <net name="result[15]"/>
+        <net name="result[14]"/>
+        <net name="result[13]"/>
+        <net name="result[12]"/>
+        <net name="result[11]"/>
+        <net name="result[10]"/>
+        <net name="result[9]"/>
+        <net name="result[8]"/>
+        <net name="result[7]"/>
+        <net name="result[6]"/>
+        <net name="result[5]"/>
+        <net name="result[4]"/>
+        <net name="result[3]"/>
+        <net name="result[2]"/>
+        <net name="result[1]"/>
+        <net name="result[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="629813143"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="UNSIGNED"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="number[31]"/>
+        <net name="number[30]"/>
+        <net name="number[29]"/>
+        <net name="number[28]"/>
+        <net name="number[27]"/>
+        <net name="number[26]"/>
+        <net name="number[25]"/>
+        <net name="number[24]"/>
+        <net name="number[23]"/>
+        <net name="number[22]"/>
+        <net name="number[21]"/>
+        <net name="number[20]"/>
+        <net name="number[19]"/>
+        <net name="number[18]"/>
+        <net name="number[17]"/>
+        <net name="number[16]"/>
+        <net name="number[15]"/>
+        <net name="number[14]"/>
+        <net name="number[13]"/>
+        <net name="number[12]"/>
+        <net name="number[11]"/>
+        <net name="number[10]"/>
+        <net name="number[9]"/>
+        <net name="number[8]"/>
+        <net name="number[7]"/>
+        <net name="number[6]"/>
+        <net name="number[5]"/>
+        <net name="number[4]"/>
+        <net name="number[3]"/>
+        <net name="number[2]"/>
+        <net name="number[1]"/>
+        <net name="number[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

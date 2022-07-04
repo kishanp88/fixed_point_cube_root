@@ -1,0 +1,1771 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 26 21:12:25 2021
+# Process ID: 14264
+# Current directory: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.runs/synth_1
+# Command line: vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.runs/synth_1/top_module.vds
+# Journal file: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 277.598 ; gain = 0.000
+Command: synth_design -top top_module -part xc7z020clg484-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'vio_0' is locked:
+* IP definition 'VIO (Virtual Input/Output) (3.0)' for IP 'vio_0' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14728 
+WARNING: [Synth 8-2611] redeclaration of ansi port clock is not allowed [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:28]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:43 . Memory (MB): peak = 747.996 ; gain = 182.316
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.runs/synth_1/.Xil/Vivado-14264-DESKTOP-D7IMLLS/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (1#1) [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.runs/synth_1/.Xil/Vivado-14264-DESKTOP-D7IMLLS/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c_root' [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:23]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_reg' and it is trimmed from '128' to '32' bits. [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'c_root' (2#1) [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio'. This will prevent further optimization [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:30]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'c1'. This will prevent further optimization [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (3#1) [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:23]
+WARNING: [Synth 8-3331] design c_root has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:47 . Memory (MB): peak = 797.484 ; gain = 231.805
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:53 . Memory (MB): peak = 797.484 ; gain = 231.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:53 . Memory (MB): peak = 797.484 ; gain = 231.805
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/ip/vio_0_2/vio_0/vio_0_in_context.xdc] for cell 'vio'
+Finished Parsing XDC File [e:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/ip/vio_0_2/vio_0/vio_0_in_context.xdc] for cell 'vio'
+Parsing XDC File [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/constrs_1/new/cube_root_xdc.xdc]
+Finished Parsing XDC File [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/constrs_1/new/cube_root_xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/constrs_1/new/cube_root_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+write_xdc: Time (s): cpu = 00:01:04 ; elapsed = 00:00:34 . Memory (MB): peak = 995.602 ; gain = 6.996
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 995.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.390 . Memory (MB): peak = 995.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:27 ; elapsed = 00:01:56 . Memory (MB): peak = 995.766 ; gain = 430.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:27 ; elapsed = 00:01:56 . Memory (MB): peak = 995.766 ; gain = 430.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for vio. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:56 . Memory (MB): peak = 995.766 ; gain = 430.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 6 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:47]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:29 ; elapsed = 00:01:59 . Memory (MB): peak = 995.766 ; gain = 430.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |c_root__GB0     |           1|     22909|
+|2     |c_root__GB1     |           1|     10549|
+|3     |c_root__GB2     |           1|     17976|
+|4     |c_root__GB3     |           1|     14773|
+|5     |top_module__GC0 |           1|        32|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    128 Bit       Adders := 7     
+	   3 Input    128 Bit       Adders := 26    
+	   2 Input    126 Bit       Adders := 1     
+	   2 Input    120 Bit       Adders := 1     
+	   2 Input    114 Bit       Adders := 1     
+	   2 Input    108 Bit       Adders := 1     
+	   2 Input    102 Bit       Adders := 1     
+	   2 Input     96 Bit       Adders := 1     
+	   2 Input     90 Bit       Adders := 1     
+	   2 Input     84 Bit       Adders := 1     
+	   3 Input     81 Bit       Adders := 1     
+	   2 Input     80 Bit       Adders := 1     
+	   2 Input     78 Bit       Adders := 1     
+	   2 Input     77 Bit       Adders := 1     
+	   2 Input     74 Bit       Adders := 1     
+	   2 Input     72 Bit       Adders := 1     
+	   2 Input     71 Bit       Adders := 1     
+	   2 Input     68 Bit       Adders := 1     
+	   2 Input     66 Bit       Adders := 1     
+	   2 Input     65 Bit       Adders := 1     
+	   2 Input     62 Bit       Adders := 1     
+	   2 Input     60 Bit       Adders := 1     
+	   2 Input     59 Bit       Adders := 1     
+	   2 Input     56 Bit       Adders := 1     
+	   2 Input     54 Bit       Adders := 1     
+	   2 Input     53 Bit       Adders := 2     
+	   2 Input     50 Bit       Adders := 1     
+	   2 Input     48 Bit       Adders := 1     
+	   2 Input     47 Bit       Adders := 1     
+	   2 Input     44 Bit       Adders := 1     
+	   2 Input     42 Bit       Adders := 1     
+	   2 Input     41 Bit       Adders := 1     
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     35 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     29 Bit       Adders := 1     
++---Multipliers : 
+	                65x66  Multipliers := 1     
+	                68x69  Multipliers := 1     
+	                71x72  Multipliers := 1     
+	                74x75  Multipliers := 1     
+	                77x78  Multipliers := 1     
+	                80x81  Multipliers := 1     
+	                62x63  Multipliers := 1     
+	                59x60  Multipliers := 1     
+	                56x57  Multipliers := 1     
+	                53x54  Multipliers := 1     
+	                50x51  Multipliers := 1     
+	                47x48  Multipliers := 1     
+	                44x45  Multipliers := 1     
+	                41x42  Multipliers := 1     
+	                 2x79  Multipliers := 1     
+	                 2x76  Multipliers := 1     
+	                38x39  Multipliers := 1     
+	                 2x73  Multipliers := 1     
+	                 2x70  Multipliers := 1     
+	                35x36  Multipliers := 1     
+	                 2x67  Multipliers := 1     
+	                 2x64  Multipliers := 1     
+	                32x33  Multipliers := 1     
+	                 2x61  Multipliers := 1     
+	                 2x58  Multipliers := 1     
+	                29x30  Multipliers := 1     
+	                 2x55  Multipliers := 1     
+	                 2x52  Multipliers := 1     
+	                 2x49  Multipliers := 1     
+	                 2x46  Multipliers := 1     
+	                 2x43  Multipliers := 1     
+	                 2x40  Multipliers := 1     
+	                 2x37  Multipliers := 1     
+	                 2x34  Multipliers := 1     
+	                 2x31  Multipliers := 1     
+	                 2x28  Multipliers := 1     
+	                 2x25  Multipliers := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 27    
+	   2 Input     77 Bit        Muxes := 1     
+	   2 Input     74 Bit        Muxes := 1     
+	   2 Input     71 Bit        Muxes := 1     
+	   2 Input     68 Bit        Muxes := 1     
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     62 Bit        Muxes := 1     
+	   2 Input     59 Bit        Muxes := 1     
+	   2 Input     56 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input     47 Bit        Muxes := 1     
+	   2 Input     44 Bit        Muxes := 1     
+	   2 Input     41 Bit        Muxes := 1     
+	   2 Input     38 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module c_root 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    128 Bit       Adders := 7     
+	   3 Input    128 Bit       Adders := 26    
+	   2 Input    126 Bit       Adders := 1     
+	   2 Input    120 Bit       Adders := 1     
+	   2 Input    114 Bit       Adders := 1     
+	   2 Input    108 Bit       Adders := 1     
+	   2 Input    102 Bit       Adders := 1     
+	   2 Input     96 Bit       Adders := 1     
+	   2 Input     90 Bit       Adders := 1     
+	   2 Input     84 Bit       Adders := 1     
+	   3 Input     81 Bit       Adders := 1     
+	   2 Input     80 Bit       Adders := 1     
+	   2 Input     78 Bit       Adders := 1     
+	   2 Input     77 Bit       Adders := 1     
+	   2 Input     74 Bit       Adders := 1     
+	   2 Input     72 Bit       Adders := 1     
+	   2 Input     71 Bit       Adders := 1     
+	   2 Input     68 Bit       Adders := 1     
+	   2 Input     66 Bit       Adders := 1     
+	   2 Input     65 Bit       Adders := 1     
+	   2 Input     62 Bit       Adders := 1     
+	   2 Input     60 Bit       Adders := 1     
+	   2 Input     59 Bit       Adders := 1     
+	   2 Input     56 Bit       Adders := 1     
+	   2 Input     54 Bit       Adders := 1     
+	   2 Input     53 Bit       Adders := 2     
+	   2 Input     50 Bit       Adders := 1     
+	   2 Input     48 Bit       Adders := 1     
+	   2 Input     47 Bit       Adders := 1     
+	   2 Input     44 Bit       Adders := 1     
+	   2 Input     42 Bit       Adders := 1     
+	   2 Input     41 Bit       Adders := 1     
+	   2 Input     38 Bit       Adders := 1     
+	   2 Input     35 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     29 Bit       Adders := 1     
++---Multipliers : 
+	                65x66  Multipliers := 1     
+	                68x69  Multipliers := 1     
+	                71x72  Multipliers := 1     
+	                74x75  Multipliers := 1     
+	                77x78  Multipliers := 1     
+	                80x81  Multipliers := 1     
+	                62x63  Multipliers := 1     
+	                59x60  Multipliers := 1     
+	                56x57  Multipliers := 1     
+	                53x54  Multipliers := 1     
+	                50x51  Multipliers := 1     
+	                47x48  Multipliers := 1     
+	                44x45  Multipliers := 1     
+	                41x42  Multipliers := 1     
+	                 2x79  Multipliers := 1     
+	                 2x76  Multipliers := 1     
+	                38x39  Multipliers := 1     
+	                 2x73  Multipliers := 1     
+	                 2x70  Multipliers := 1     
+	                35x36  Multipliers := 1     
+	                 2x67  Multipliers := 1     
+	                 2x64  Multipliers := 1     
+	                32x33  Multipliers := 1     
+	                 2x61  Multipliers := 1     
+	                 2x58  Multipliers := 1     
+	                29x30  Multipliers := 1     
+	                 2x55  Multipliers := 1     
+	                 2x52  Multipliers := 1     
+	                 2x49  Multipliers := 1     
+	                 2x46  Multipliers := 1     
+	                 2x43  Multipliers := 1     
+	                 2x40  Multipliers := 1     
+	                 2x37  Multipliers := 1     
+	                 2x34  Multipliers := 1     
+	                 2x31  Multipliers := 1     
+	                 2x28  Multipliers := 1     
+	                 2x25  Multipliers := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 27    
+	   2 Input     77 Bit        Muxes := 1     
+	   2 Input     74 Bit        Muxes := 1     
+	   2 Input     71 Bit        Muxes := 1     
+	   2 Input     68 Bit        Muxes := 1     
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     62 Bit        Muxes := 1     
+	   2 Input     59 Bit        Muxes := 1     
+	   2 Input     56 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input     47 Bit        Muxes := 1     
+	   2 Input     44 Bit        Muxes := 1     
+	   2 Input     41 Bit        Muxes := 1     
+	   2 Input     38 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 5 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+DSP Report: Generating DSP x4, operation Mode is: A*B+1.
+DSP Report: operator x4 is absorbed into DSP x4.
+DSP Report: operator x5 is absorbed into DSP x4.
+DSP Report: Generating DSP x4, operation Mode is: A*B+1.
+DSP Report: operator x4 is absorbed into DSP x4.
+DSP Report: operator x5 is absorbed into DSP x4.
+DSP Report: Generating DSP x4, operation Mode is: A*B+1.
+DSP Report: operator x4 is absorbed into DSP x4.
+DSP Report: operator x5 is absorbed into DSP x4.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 5 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 6 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 9 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 9 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 9 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 10 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 10 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 17 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 17 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 25 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 25 [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:57]
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+WARNING: [Synth 8-3331] design c_root has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:36 ; elapsed = 00:04:08 . Memory (MB): peak = 1113.859 ; gain = 548.180
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 227, Available = 220. Use report_utilization command for details.
+DSP Report: Generating DSP x4, operation Mode is (post resource management): A*B+1.
+DSP Report: operator x4 is absorbed into DSP x4.
+DSP Report: operator x5 is absorbed into DSP x4.
+DSP Report: Generating DSP x4, operation Mode is (post resource management): A*B+1.
+DSP Report: operator x4 is absorbed into DSP x4.
+DSP Report: operator x5 is absorbed into DSP x4.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*(B:0x0).
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*(B:0x0).
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*(B:0x0).
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*(B:0x0).
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP x5, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: operator x5 is absorbed into DSP x5.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): A*(B:0x0).
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): PCIN+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: Generating DSP y4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator y4 is absorbed into DSP y4.
+DSP Report: operator y4 is absorbed into DSP y4.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|c_root      | A*B+1          | 12     | 11     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B+1          | 15     | 14     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B+1          | 18     | 17     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 25     | 7      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 11     | 10     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 10     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 14     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 22     | 6      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 25     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 12     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 15     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 23     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 10     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 13     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 21     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 24     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 11     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 10     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 14     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c_root      | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |c_root__GB0     |           1|      6634|
+|2     |c_root__GB1     |           1|      6155|
+|3     |c_root__GB2     |           1|     14780|
+|4     |c_root__GB3     |           1|     14369|
+|5     |top_module__GC0 |           1|        32|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:03 ; elapsed = 00:04:38 . Memory (MB): peak = 1113.859 ; gain = 548.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:51 ; elapsed = 00:33:21 . Memory (MB): peak = 1372.945 ; gain = 807.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |c_root__GB0     |           1|      6227|
+|2     |c_root__GB1     |           1|      5364|
+|3     |c_root__GB2     |           1|     14780|
+|4     |c_root__GB3     |           1|     14369|
+|5     |top_module__GC0 |           1|        32|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:43 ; elapsed = 00:34:20 . Memory (MB): peak = 1372.945 ; gain = 807.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:48 ; elapsed = 00:34:25 . Memory (MB): peak = 1372.945 ; gain = 807.266
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:48 ; elapsed = 00:34:26 . Memory (MB): peak = 1372.945 ; gain = 807.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:52 ; elapsed = 00:34:30 . Memory (MB): peak = 1372.945 ; gain = 807.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:52 ; elapsed = 00:34:30 . Memory (MB): peak = 1372.945 ; gain = 807.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:52 ; elapsed = 00:34:30 . Memory (MB): peak = 1372.945 ; gain = 807.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:52 ; elapsed = 00:34:30 . Memory (MB): peak = 1372.945 ; gain = 807.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |vio_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |vio_0   |     1|
+|2     |CARRY4  |  2836|
+|3     |DSP48E1 |   105|
+|4     |LUT1    |   373|
+|5     |LUT2    |  2229|
+|6     |LUT3    |  1098|
+|7     |LUT4    |  3358|
+|8     |LUT5    |  1086|
+|9     |LUT6    |  2945|
+|10    |IBUF    |     1|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 14063|
+|2     |  c1     |c_root | 14030|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:52 ; elapsed = 00:34:30 . Memory (MB): peak = 1372.945 ; gain = 807.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:31 ; elapsed = 00:33:35 . Memory (MB): peak = 1372.945 ; gain = 608.984
+Synthesis Optimization Complete : Time (s): cpu = 00:05:52 ; elapsed = 00:34:31 . Memory (MB): peak = 1372.945 ; gain = 807.266
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2941 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_module' is not ideal for floorplanning, since the cellview 'c_root' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1372.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:09 ; elapsed = 00:35:02 . Memory (MB): peak = 1372.945 ; gain = 1077.418
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1372.945 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.runs/synth_1/top_module.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1372.945 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 26 21:48:42 2021...

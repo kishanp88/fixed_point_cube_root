@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../cube_root_bs.srcs/sources_1/new/bs_cuberoot.v" \
+"../../../../cube_root_bs.srcs/sim_1/new/bs_cbr_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

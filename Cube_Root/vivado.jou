@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 26 19:44:52 2021
+# Process ID: 12976
+# Current directory: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21888 E:\STUDY\Books\Electronica\microcontrollers\BITS\sem 1\Reconfigurable computing\Assignments\Assignment 2\Cube_Root\cube_root.xpr
+# Log file: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/vivado.log
+# Journal file: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root_tb_behav.wcfg}
+source cube_root_tb.tcl
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+open_wave_config {E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root_tb_behav.wcfg}
+source cube_root_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_sim

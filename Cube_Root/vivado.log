@@ -1,0 +1,225 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov 26 19:44:52 2021
+# Process ID: 12976
+# Current directory: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21888 E:\STUDY\Books\Electronica\microcontrollers\BITS\sem 1\Reconfigurable computing\Assignments\Assignment 2\Cube_Root\cube_root.xpr
+# Log file: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/vivado.log
+# Journal file: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root'
+INFO: [Project 1-313] Project file moved from 'C:/Users/SHREE/Documents/debug/cube_root' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'vio_0' is locked:
+* IP definition 'VIO (Virtual Input/Output) (3.0)' for IP 'vio_0' (customized with software release 2016.4) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 680.004 ; gain = 100.586
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cube_root_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cube_root_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module c_root
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sim_1/new/cube_root_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+"xelab -wto 4141b8b5b1c74700b51073087c04c094 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4141b8b5b1c74700b51073087c04c094 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.c_root
+Compiling module xil_defaultlib.cube_root_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cube_root_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 751.270 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cube_root_tb_behav -key {Behavioral:sim_1:Functional:cube_root_tb} -tclbatch {cube_root_tb.tcl} -view {{E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root_tb_behav.wcfg}
+source cube_root_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 170 ns : File "E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sim_1/new/cube_root_tb.v" Line 55
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 753.672 ; gain = 2.402
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cube_root_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 753.672 ; gain = 2.402
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: top_module
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+WARNING: [Synth 8-2611] redeclaration of ansi port clock is not allowed [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:28]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1215.262 ; gain = 175.312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/.Xil/Vivado-12976-DESKTOP-D7IMLLS/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (1#1) [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/.Xil/Vivado-12976-DESKTOP-D7IMLLS/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c_root' [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:23]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_reg' and it is trimmed from '128' to '32' bits. [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'c_root' (2#1) [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio'. This will prevent further optimization [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:30]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'c1'. This will prevent further optimization [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (3#1) [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/top_module.v:23]
+WARNING: [Synth 8-3331] design c_root has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1270.922 ; gain = 230.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1270.922 ; gain = 230.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1270.922 ; gain = 230.973
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/ip/vio_0_2/vio_0.dcp' for cell 'vio'
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/ip/vio_0_2/vio_0.xdc] for cell 'vio'
+Finished Parsing XDC File [e:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/ip/vio_0_2/vio_0.xdc] for cell 'vio'
+Parsing XDC File [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/constrs_1/new/cube_root_xdc.xdc]
+Finished Parsing XDC File [E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/constrs_1/new/cube_root_xdc.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1471.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1555.574 ; gain = 515.625
+15 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:59 . Memory (MB): peak = 1555.574 ; gain = 762.801
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1569.449 ; gain = 1.930
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cube_root_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cube_root_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sources_1/new/c_root.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module c_root
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sim_1/new/cube_root_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cube_root_tb
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+"xelab -wto 4141b8b5b1c74700b51073087c04c094 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4141b8b5b1c74700b51073087c04c094 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cube_root_tb_behav xil_defaultlib.cube_root_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.c_root
+Compiling module xil_defaultlib.cube_root_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cube_root_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1609.477 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cube_root_tb_behav -key {Behavioral:sim_1:Functional:cube_root_tb} -tclbatch {cube_root_tb.tcl} -view {{E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root_tb_behav.wcfg}
+source cube_root_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 170 ns : File "E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.srcs/sim_1/new/cube_root_tb.v" Line 55
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1620.047 ; gain = 10.570
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cube_root_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 1620.047 ; gain = 50.598
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Fri Nov 26 21:12:15 2021] Launched synth_1...
+Run output will be captured here: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Nov 26 21:49:31 2021] Launched impl_1...
+Run output will be captured here: E:/STUDY/Books/Electronica/microcontrollers/BITS/sem 1/Reconfigurable computing/Assignments/Assignment 2/Cube_Root/cube_root.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 26 21:53:45 2021...
